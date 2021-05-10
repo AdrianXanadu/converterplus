@@ -10,31 +10,33 @@ body {
 
 .nav {
     list-style-type: none;
+    text-align: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #738678;
-    height: 45px;
 }
 
 .nav li {
     float: left;
 }
 
-.nav li > img {
-    width: auto;
-    height: 35px;
-    padding: 5px 5px 5px 5px;
-}
 
-.nav li a {
+
+.nav li a:not(.icon) {
     display: block;
+    padding: 15px;
     color: white;
     text-align: center;
-    padding: 16px 16px;
     text-decoration: none;
     opacity: 1;
     transition: opacity 250ms; 
+}
+
+.nav img {
+    display: block;
+    height: 35px;
+    padding: 5px;   
 }
 
 .nav li a:hover {
@@ -57,8 +59,10 @@ body {
     background-color: #e0a943;
     width: 20em;
     border-radius: 20px;
-    margin: 20px 20px 20px 20px; 
+    margin: 20px; 
 }
+
+
 
 .content {
     padding: 0px 10px 10px 10px;
@@ -84,6 +88,48 @@ body {
 
 @media screen and (max-width: 550px) {
     .nav li {
-      float: none;
-    }   
+        float: none;
+    }
+    .nav li img {
+        display:inline-block;
+    }
+}
+
+/* INPUT */
+
+#number {
+/*     height: 10vh; */
+    font-size: 48px;
+    width: 100%;
+    float: left;
+    margin: 0px 10px 0px 10px;
+}
+
+#unitSelect {
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+
+.inputContainer {
+    display: flex;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+/* CUBES */
+
+.cube {
+    background-color: #e0a943;
+    width: 20em;
+    height: 20em;
+    border-radius: 20px;
+    margin: 20px; 
+}
+
+.number {
+    font-size: 24px;    
+}
+
+.unit {
+    
 }
