@@ -21,8 +21,6 @@ body {
     float: left;
 }
 
-
-
 .nav li a:not(.icon) {
     display: block;
     padding: 15px;
@@ -47,10 +45,9 @@ body {
 /* CARDS */
 
 .container {
-    margin: 0px 0 20px 0;
+    margin: 0px 0 20px 0; 
     display: flex;
     flex-wrap: wrap;
-    height: 50vh;
     justify-content: center;
     align-items: center;
 }
@@ -61,8 +58,6 @@ body {
     border-radius: 20px;
     margin: 20px; 
 }
-
-
 
 .content {
     padding: 0px 10px 10px 10px;
@@ -98,7 +93,6 @@ body {
 /* INPUT */
 
 #number {
-/*     height: 10vh; */
     font-size: 48px;
     width: 100%;
     float: left;
@@ -112,7 +106,6 @@ body {
 
 .inputContainer {
     display: flex;
-    width: 100vw;
     margin-top: 10px;
 }
 
@@ -124,12 +117,49 @@ body {
     height: 20em;
     border-radius: 20px;
     margin: 20px; 
+    position: relative;
 }
 
 .number {
-    font-size: 24px;    
+    font-size: 48px;
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
 
 .unit {
-    
+    position: absolute;
+    font-size: 48px;
+    bottom: 0;
+    padding: 15px;
+    line-height: 28px
+}
+
+.copy {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cube:hover {
+    cursor: pointer;
+    opacity: 0.5; 
+    transition: opacity 250ms; 
+}
+
+.cube:hover .copy {
+    visibility: visible; 
+}
+
+/* COLOURS */
+
+.active {
+    background-color: black;
+}
+
+.us {
+    background-color: #DDA0DD;
 }

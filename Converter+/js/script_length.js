@@ -7,13 +7,18 @@ unitSelect.addEventListener("input", updateNumbers)
 
 // ADD COPY TO CLIPBOARD
 document.querySelectorAll('.cube').forEach(item => {
-  item.addEventListener('click', function (e) {
-    if (e.target.className.split(' ')[0] == "cube") {
-        e.target.childNodes[1]
-    } else {
-        e.target.parentElement.childNodes[1]
-    }
-    document.execCommand("copy");
+    item.addEventListener('click', function (e) {
+        var range = document.createRange()
+        window.getSelection().removeAllRanges()
+        if (e.target.className.split(' ')[0] == "cube") {
+            range.selectNode(document.getElementById(e.target.childNodes[1].id))
+            window.getSelection().addRange(range)
+        } else {
+            range.selectNode(document.getElementById(e.target.parentElement.childNodes[1].id))
+            window.getSelection().addRange(range)
+        }
+        document.execCommand("copy")
+        window.getSelection().removeAllRanges()
   })
 })
 
