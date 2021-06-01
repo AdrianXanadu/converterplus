@@ -28,14 +28,14 @@ function updateNumbers() {
     
     
     
-    document.getElementById("ng").innerHTML = (parseFloat(gram) * 1000000000)
-    document.getElementById("µg").innerHTML = (parseFloat(gram) * 1000000)
-    document.getElementById("mg").innerHTML = (parseFloat(gram) * 1000)
-    document.getElementById("g").innerHTML = (parseFloat(gram) * 1)
-    document.getElementById("dag").innerHTML = (parseFloat(gram) / 10)
-    document.getElementById("kg").innerHTML = (parseFloat(gram) / 1000)
-    document.getElementById("t").innerHTML = (parseFloat(gram) / 1000000)
-    document.getElementById("lb").innerHTML = (parseFloat(gram) / 453.5924)
-    document.getElementById("oz").innerHTML = (parseFloat(gram) / 28.34952)
-    document.getElementById("st").innerHTML = (parseFloat(gram) / 6350.293)
+    document.getElementById("ng").innerHTML = (parseFloat(gram) * 1000000000).toPrecision(4)
+    document.getElementById("µg").innerHTML = (parseFloat(gram) * 1000000).toPrecision(4)
+    document.getElementById("mg").innerHTML = (parseFloat(gram) * 1000).toPrecision(4)
+    document.getElementById("g").innerHTML = (parseFloat(gram) * 1).toPrecision(4)
+    document.getElementById("dag").innerHTML = (parseFloat(gram) / 10).toPrecision(4)
+    document.getElementById("kg").innerHTML = (parseFloat(gram) / 1000).toPrecision(4)
+    document.getElementById("t").innerHTML = (parseFloat(gram) / 1000000).toPrecision(4)
+    document.getElementById("lb").innerHTML = (parseFloat(gram) / 453.5924).toPrecision(4)
+    document.getElementById("oz").innerHTML = (parseFloat(gram) / 28.34952).toPrecision(4)
+    document.getElementById("st").innerHTML = (parseFloat(gram) / 6350.293).toPrecision(4)
 }

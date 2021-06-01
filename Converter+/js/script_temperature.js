@@ -54,12 +54,12 @@ function updateNumbers() {
     
     
     
-    document.getElementById("cel").innerHTML = (parseFloat(celsius) * 1)
-    document.getElementById("fah").innerHTML = (parseFloat(celsius) * 9/5 + 32)
-    document.getElementById("kel").innerHTML = (parseFloat(celsius) + 273.15)
-    document.getElementById("ran").innerHTML = ((parseFloat(celsius) + 273.15) * (9/5))
-    document.getElementById("del").innerHTML = ((100 - parseFloat(celsius)) * (3/2))
-    document.getElementById("new").innerHTML = (parseFloat(celsius) * 33/100)
-    document.getElementById("rea").innerHTML = (parseFloat(celsius) * 4/5)
-    document.getElementById("rom").innerHTML = (parseFloat(celsius) * 21/40 + 7.5)
+    document.getElementById("cel").innerHTML = (parseFloat(celsius) * 1).toPrecision(4)
+    document.getElementById("fah").innerHTML = (parseFloat(celsius) * 9/5 + 32).toPrecision(4)
+    document.getElementById("kel").innerHTML = (parseFloat(celsius) + 273.15).toPrecision(4)
+    document.getElementById("ran").innerHTML = ((parseFloat(celsius) + 273.15) * (9/5)).toPrecision(4)
+    document.getElementById("del").innerHTML = ((100 - parseFloat(celsius)) * (3/2)).toPrecision(4)
+    document.getElementById("new").innerHTML = (parseFloat(celsius) * 33/100).toPrecision(4)
+    document.getElementById("rea").innerHTML = (parseFloat(celsius) * 4/5).toPrecision(4)
+    document.getElementById("rom").innerHTML = (parseFloat(celsius) * 21/40 + 7.5).toPrecision(4)
 }

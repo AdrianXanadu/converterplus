@@ -27,16 +27,16 @@ function updateNumbers() {
     let cubicmetre = inputNumber * parseFloat(unitSelect.value)
     
     
-    document.getElementById("ml").innerHTML = (parseFloat(cubicmetre) * 1000000)
-    document.getElementById("l").innerHTML = (parseFloat(cubicmetre) * 1000)
-    document.getElementById("hl").innerHTML = (parseFloat(cubicmetre) * 1)
-    document.getElementById("mm³").innerHTML = (parseFloat(cubicmetre) * 1000000000)
-    document.getElementById("cm³").innerHTML = (parseFloat(cubicmetre) * 1000000)
-    document.getElementById("dm³").innerHTML = (parseFloat(cubicmetre) * 1000)
-    document.getElementById("m³").innerHTML = (parseFloat(cubicmetre) * 1)
-    document.getElementById("km³").innerHTML = (parseFloat(cubicmetre) / 1000000000)
+    document.getElementById("ml").innerHTML = (parseFloat(cubicmetre) * 1000000).toPrecision(4)
+    document.getElementById("l").innerHTML = (parseFloat(cubicmetre) * 1000).toPrecision(4)
+    document.getElementById("hl").innerHTML = (parseFloat(cubicmetre) * 1).toPrecision(4)
+    document.getElementById("mm³").innerHTML = (parseFloat(cubicmetre) * 1000000000).toPrecision(4)
+    document.getElementById("cm³").innerHTML = (parseFloat(cubicmetre) * 1000000).toPrecision(4)
+    document.getElementById("dm³").innerHTML = (parseFloat(cubicmetre) * 1000).toPrecision(4)
+    document.getElementById("m³").innerHTML = (parseFloat(cubicmetre) * 1).toPrecision(4)
+    document.getElementById("km³").innerHTML = (parseFloat(cubicmetre) / 1000000000).toPrecision(4)
     
-    document.getElementById("in³").innerHTML = (parseFloat(cubicmetre) * 61023.744)
-    document.getElementById("gal").innerHTML = (parseFloat(cubicmetre) * 219.96925)
-    document.getElementById("pt").innerHTML = (parseFloat(cubicmetre) * 1759.7540 )
+    document.getElementById("in³").innerHTML = (parseFloat(cubicmetre) * 61023.744).toPrecision(4)
+    document.getElementById("gal").innerHTML = (parseFloat(cubicmetre) * 219.96925).toPrecision(4)
+    document.getElementById("pt").innerHTML = (parseFloat(cubicmetre) * 1759.7540 ).toPrecision(4)
 }

@@ -28,19 +28,19 @@ function updateNumbers() {
     
     
     
-    document.getElementById("nm").innerHTML = (parseFloat(meter) * 1000000000)
-    document.getElementById("µm").innerHTML = (parseFloat(meter) * 1000000)
-    document.getElementById("mm").innerHTML = (parseFloat(meter) * 1000)
-    document.getElementById("cm").innerHTML = (parseFloat(meter) * 100)
-    document.getElementById("dm").innerHTML = (parseFloat(meter) * 10)
-    document.getElementById("m").innerHTML = (parseFloat(meter) * 1)
+    document.getElementById("nm").innerHTML = (parseFloat(meter) * 1000000000).toPrecision(4)
+    document.getElementById("µm").innerHTML = (parseFloat(meter) * 1000000).toPrecision(4)
+    document.getElementById("mm").innerHTML = (parseFloat(meter) * 1000).toPrecision(4)
+    document.getElementById("cm").innerHTML = (parseFloat(meter) * 100).toPrecision(4)
+    document.getElementById("dm").innerHTML = (parseFloat(meter) * 10).toPrecision(4)
+    document.getElementById("m").innerHTML = (parseFloat(meter) * 1).toPrecision(4)
     // ----------------------------------------------------------------------
-    document.getElementById("hm").innerHTML = (parseFloat(meter) / 100)
-    document.getElementById("km").innerHTML = (parseFloat(meter) / 1000)
+    document.getElementById("hm").innerHTML = (parseFloat(meter) / 100).toPrecision(4)
+    document.getElementById("km").innerHTML = (parseFloat(meter) / 1000).toPrecision(4)
     // ----------------------------------------------------------------------
-    document.getElementById("in").innerHTML = (parseFloat(meter) * 39.37)
-    document.getElementById("ft").innerHTML = (parseFloat(meter) * 3.28)
-    document.getElementById("yd").innerHTML = (parseFloat(meter) * 1.0936)
+    document.getElementById("in").innerHTML = (parseFloat(meter) * 39.37).toPrecision(4)
+    document.getElementById("ft").innerHTML = (parseFloat(meter) * 3.28).toPrecision(4)
+    document.getElementById("yd").innerHTML = (parseFloat(meter) * 1.0936).toPrecision(4)
     // ----------------------------------------------------------------------
-    document.getElementById("mi").innerHTML = (parseFloat(meter) / 1609.344)
+    document.getElementById("mi").innerHTML = (parseFloat(meter) / 1609.344).toPrecision(4)
 }

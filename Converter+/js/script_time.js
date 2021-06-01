@@ -28,12 +28,12 @@ function updateNumbers() {
     
     
     
-    document.getElementById("ns").innerHTML = (parseFloat(second) * 1000000000)
-    document.getElementById("µs").innerHTML = (parseFloat(second) * 1000000)
-    document.getElementById("ms").innerHTML = (parseFloat(second) * 10)
-    document.getElementById("s").innerHTML = (parseFloat(second) * 1)
-    document.getElementById("m").innerHTML = (parseFloat(second) / 60)
-    document.getElementById("h").innerHTML = (parseFloat(second) / 3600)
-    document.getElementById("d").innerHTML = (parseFloat(second) / 86400)
-    document.getElementById("week").innerHTML = (parseFloat(second) / 432000)
+    document.getElementById("ns").innerHTML = (parseFloat(second) * 1000000000).toPrecision(4)
+    document.getElementById("µs").innerHTML = (parseFloat(second) * 1000000).toPrecision(4)
+    document.getElementById("ms").innerHTML = (parseFloat(second) * 10).toPrecision(4)
+    document.getElementById("s").innerHTML = (parseFloat(second) * 1).toPrecision(4)
+    document.getElementById("m").innerHTML = (parseFloat(second) / 60).toPrecision(4)
+    document.getElementById("h").innerHTML = (parseFloat(second) / 3600).toPrecision(4)
+    document.getElementById("d").innerHTML = (parseFloat(second) / 86400).toPrecision(4)
+    document.getElementById("week").innerHTML = (parseFloat(second) / 432000).toPrecision(4)
 }
