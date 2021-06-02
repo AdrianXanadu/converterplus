@@ -120,9 +120,6 @@ body {
     .nav li img {
         display:inline-block;
     }
-    /*.big-cube {
-        max-width: 20em;
-    }*/
 }
 
 /* INPUT */
@@ -192,7 +189,7 @@ body {
     transition: opacity 250ms; 
 }
 
-.cube:hover, .big-cube:hover .copy {
+.cube:hover .copy, .big-cube:hover .copy {
     visibility: visible; 
 }
 
