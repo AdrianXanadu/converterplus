@@ -169,6 +169,7 @@ body {
 
 .unit {
     position: absolute;
+    color: #404040;
     font-size: 48px;
     bottom: 0;
     padding: 15px;
