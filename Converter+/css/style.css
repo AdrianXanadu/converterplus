@@ -25,6 +25,10 @@ body {
     box-shadow: 5px 5px #000000;
 }
 
+.unit {
+    color: #404040;
+}
+
 .us {
 /*     background-color: #DDA0DD; */
     background-color: #7BD658;
@@ -36,8 +40,9 @@ body {
 
 /* MAIN */
 
-body {
+html, body {
     margin: 0;
+    height: 100%;
     font-family: "Helvetica", sans-serif;
 }
 
@@ -166,7 +171,6 @@ body {
 
 .unit {
     position: absolute;
-    color: #404040;
     font-size: 48px;
     bottom: 0;
     padding: 15px;
