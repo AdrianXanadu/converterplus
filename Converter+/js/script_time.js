@@ -35,5 +35,6 @@ function updateNumbers() {
     document.getElementById("m").innerHTML = (parseFloat(second) / 60).toPrecision(4)
     document.getElementById("h").innerHTML = (parseFloat(second) / 3600).toPrecision(4)
     document.getElementById("d").innerHTML = (parseFloat(second) / 86400).toPrecision(4)
-    document.getElementById("week").innerHTML = (parseFloat(second) / 432000).toPrecision(4)
+    document.getElementById("week").innerHTML = (parseFloat(second) / 604800).toPrecision(4)
+    document.getElementById("year").innerHTML = (parseFloat(second) / 31534272).toPrecision(4)
 }
