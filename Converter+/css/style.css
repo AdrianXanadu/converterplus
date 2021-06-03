@@ -1,40 +1,45 @@
 /* COLOURS */
 
 .active {
-    background-color: black;
+    color: white;
 }
 
 body {
-/*     background-color: #737373; */
-    background-color: #766C8C;
+    background-color: #2b2a33;
 }
 
 .nav {
-/*     background-color: #738678; */
-    background-color: #8C5060;
+    background-color: #2b2a33;
 }
 
 .card {
-/*     background-color: #e0a943; */
-    background-color: #B9DA93;
+    background-image: linear-gradient(to right, #00ebff 0%, #008b97 50%);   
 }
 
 .cube, .big-cube {
-/*     background-color: #e0a943; */
-    background-color: #B9DA93;
+    background-image: linear-gradient(to right, #00ebff 0%, #008b97 50%);   
     box-shadow: 5px 5px #000000;
+}
+
+.us {
+    background-image: linear-gradient(to right, #008b97 0%, #00ebff 50%);   
+}
+
+.nav li a:not(.icon) {
+    color: rgb(190, 190, 190);
 }
 
 .unit {
     color: #404040;
 }
 
-.us {
-/*     background-color: #DDA0DD; */
-    background-color: #7BD658;
+#number {
+    background-color: #2b2a33;
+    color: white;
 }
 
-.nav li a:not(.icon) {
+#unitSelect {
+    background-color: #2b2a33;
     color: white;
 }
 
@@ -116,8 +121,6 @@ html, body {
     transition: opacity 250ms; 
 }
 
-
-
 /* INPUT */
 
 #number {
@@ -188,7 +191,9 @@ html, body {
 .cube:hover, .big-cube:hover {
     cursor: pointer;
     opacity: 0.5; 
-    transition: opacity 250ms; 
+    transition: opacity 250ms;
+    transition: transform 250ms;
+    transform: scale(1.05);
 }
 
 .cube:hover .copy, .big-cube:hover .copy {
