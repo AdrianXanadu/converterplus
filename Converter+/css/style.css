@@ -1,7 +1,7 @@
 /* COLOURS */
 
 .active {
-    color: white;
+    background-color: black;
 }
 
 body {
@@ -49,6 +49,16 @@ html, body {
     margin: 0;
     height: 100%;
     font-family: "Helvetica", sans-serif;
+}
+
+h1, h3 {
+    margin: 1rem;
+    color: rgb(190, 190, 190);
+}
+
+p {
+   margin: 1rem;
+   color: rgb(200, 200, 200);
 }
 
 /* NAVBAR */
